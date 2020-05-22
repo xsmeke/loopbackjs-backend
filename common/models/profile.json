@@ -22,11 +22,19 @@
       "type": "number"
     },
     "history": {
-      "type": ["object"]
+      "type": [
+        "object"
+      ]
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
